@@ -13,7 +13,7 @@ matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 
 
-# In[ ]:
+# In[161]:
 
 
 # Tempature 데이터 로드
@@ -23,13 +23,14 @@ months = ['%02d' % i for i in range(1,13)]
 
 DIR = './data/'
 
-result_arr = np.empty(shape=(0,49,65),dtype='object') 
+
 f_list = ["2m_temperature","boundary_layer_height","k_index","relative_humidity+975","surface_pressure",
      "total_precipitation","u_component_of_wind+950","v_component_of_wind+950"]
 
 result_all = dict()
 
 for f in f_list:  
+    result_arr = np.empty(shape=(0,49,65),dtype='object') 
     for y in years: 
         for m in months:
             print(m)
@@ -42,7 +43,7 @@ for f in f_list:
     result_all[f] = result_arr          
 
 
-# In[152]:
+# In[162]:
 
 
 result_all['boundary_layer_height'].shape
