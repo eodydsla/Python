@@ -1,4 +1,4 @@
-## Python 가상 환경 구축
+1. Python 가상 환경 구축
 Mac
 python3.10 -m venv example (가상 환경 생성)
 cd example (example directory 이동)
@@ -22,7 +22,7 @@ Windows
 https://www.jetbrains.com/pycharm/download/#section=windows
 
  
-# Docker 및 MySQL 연습
+2. Docker 및 MySQL 연습
 
 Docker 명령어
 docker run -p 3306:3306 -e MYSQL_ROOT_PASSWORD=todos -e MYSQL_DATABASE=todos -d -v todos:/db --name todos mysql:8.0
